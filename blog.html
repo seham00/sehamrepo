@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>blog</title>
+    
+    
+    
+    
+</head>
+<body>
+  
+    <style>
+        .main {border: 1px solid #6b6b5f;}
+    </style>
+<!---Start navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" >amazon blog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          
+        
+  </nav>
+  <header class="main_heading">
+    <div class="d-flex justify-content-center align-item-center flex-column py-5">
+      <h1 class="main_heading"> Amazon Blog</h1>
+      
+    </div>
+  </header>
+  <div class="container px-0">
+    <div class="card">
+        <div class="card-body">
+        <h4>make your post:</h4>
+        <div class="form-group">
+            <label for="titleInput">Title:</label>
+            <input type="text" class="form-control" id="titleInput" placeholder="Enter a Title">
+        </div>
+        <div id="titleErr" class="alert alert-danger" style="display:none" role="alert">Please add a title to your post</div>
+        
+        <div class="form-group">
+            <label for="textInput">Content:</label>
+            <textarea rows="4" class="form-control" id="textInput" placeholder="Enter text"></textarea>
+        </div>
+        <div id="textErr" class="alert alert-danger" style="display:none" role="alert">Please add some text to your post</div>
+        <button id="blogSubmit" onclick="blogSubmit()" class="btn btn-lg btn-primary">Submit</button>
+        </div>
+    </div>
+
+    <br>
+    <div id="blogPosts">
+    <br>
+  
+         <div class="container-fluid">
+           <div class="row">
+           <div class="col-xl-10 col-lg-10 col-md-11 col-11 mx-auto my-5">
+             <div class="row gx-5 mx-sm-auto">
+               <div class="col-lg-8 col-md-11 col-11 mx-auto">
+                 <div class="row gy-5">
+                   <div class="col-12 card p-4 shadow blog-elfrt__div">
+                    <div class="d-flex justify-content-center align-item-center flex-column pt-3 pb-5">
+                      <h1 class="main_heading"> How Amazon is simplifying the job hunt</h1>
+                      <p class="blogTitle"><span">Alfonso Palacio,</span>june 7,2021</p>
+                      <p><span class="font-weight-bold"> Amazon launches Best Fit, a new program that allows software engineers to apply once and be considered for thousands of jobs across the company.
+                        The best, most rewarding part of my job is connecting people with a role where they will thrive and grow. We have tens of thousands of opportunities, and my team works obsessively to improve the experience for those who want to come join us. That means helping candidates save time when navigating our open positions and—most importantly—giving them choices when it comes to relevant roles.</span></p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div></div></div>
+         <div class="container-fluid">
+           <div class="row">
+           <div class="col-xl-10 col-lg-10 col-md-11 col-11 mx-auto my-5">
+             <div class="row gx-5 mx-sm-auto">
+               <div class="col-lg-8 col-md-11 col-11 mx-auto">
+                 <div class="row gy-5">
+                   <div class="col-12 card p-4 shadow blog-elfrt__div">
+                    <div class="d-flex justify-content-center align-item-center flex-column pt-3 pb-5">
+                      <h1 class="main_heading">Amazon Literary Partnership announces 2021 literary grants</h1>
+                      <p class="blogTitle"><span">Al Woodworth,</span>june 3,2021</p>
+                      <p><span class="font-weight-bold"> Amazon launches Best Fit, a new program that allows software engineers to apply once and be considered for thousands of jobs across the company.
+                        The best, most rewarding part of my job is connecting people with a role where they will thrive and grow. We have tens of thousands of opportunities, and my team works obsessively to improve the experience for those who want to come join us. That means helping candidates save time when navigating our open positions and—most importantly—giving them choices when it comes to relevant roles.</span></p>
+        
+                      </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div></div>
+         <div class="container-fluid">
+          <div class="row">
+          <div class="col-xl-10 col-lg-10 col-md-11 col-11 mx-auto my-5">
+            <div class="row gx-5 mx-sm-auto">
+              <div class="col-lg-8 col-md-11 col-11 mx-auto">
+                <div class="row gy-5">
+                  <div class="col-12 card p-4 shadow blog-elfrt__div">
+                   <div class="d-flex justify-content-center align-item-center flex-column pt-3 pb-5">
+                     <h1 class="main_heading">Amazon's Returnship program helps professionals get back to work</h1>
+                     <p class="blogTitle"><span">Amazon staff,</span>june 3,2021</p>
+                     <p><span class="font-weight-bold"> Amazon launches Best Fit, a new program that allows software engineers to apply once and be considered for thousands of jobs across the company.
+                       The best, most rewarding part of my job is connecting people with a role where they will thrive and grow. We have tens of thousands of opportunities, and my team works obsessively to improve the experience for those who want to come join us. That means helping candidates save time when navigating our open positions and—most importantly—giving them choices when it comes to relevant roles.</span></p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div></div>
+ 
+
+    <script src="./blog.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+   
+</html>
